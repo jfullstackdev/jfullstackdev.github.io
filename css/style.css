@@ -22,13 +22,18 @@ body {
 }
 
 .my-profile .card h3 {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-family: Verdana, Geneva, sans-serif;
 }
 
 .my-profile .card p {
-    font-size: 16px;
+    font-size: 14px;
     color: #000;
+    line-height: 1.5;
+    margin-bottom: 6px;
+    font-family: Verdana, Geneva, sans-serif;
 }
 
 .my-profile .table th,
@@ -42,10 +47,48 @@ h1 {
     text-align: center;
     font-family: "Century Gothic", arial, sans-serif;
     font-size: 200%;
+    letter-spacing: 1px;
 }
 
 p {
     font-family: "Century Gothic", arial, sans-serif;
     font-size: 125%;
-    margin: 0;         
+    margin: 0;
+    line-height: 1.5;         
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+    transition: transform 0.3s ease;
+}
+
+ol li {
+    margin-bottom: 4px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+}
+
+.ellipsis-separator {
+    font-style: italic;
+    letter-spacing: 3px;
+    color: #555;
+    margin: 0;
+    line-height: 1;
+}
+
+p.ellipsis-separator + p {
+    margin-top: 3px;
+}
+
+/* Custom styles to reduce gap between cards in desktop mode */
+@media (min-width: 992px) {
+    .my-profile .row {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    
+    .my-profile .row > div[class*='col-'] {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
