@@ -49,15 +49,31 @@ h1 {
     font-size: 150%;
     letter-spacing: 1px;
     margin-top: 2.5px;
+    margin-bottom: 1px;
+    line-height: 1.1;
 }
 
 .rt-heading {
-    padding: 2.5px 0;
-    margin: 2.5px 0;
+    padding: 1px 0;
+    margin: 1px 0;
+}
+
+.rt-heading div {
+    margin-top: 0;
+}
+
+.rt-heading p {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.rt-heading p + p {
+    margin-top: 2px !important;
 }
 
 header.ScriptHeader {
-    padding-top: 2.5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 p {
@@ -90,7 +106,6 @@ p.ellipsis-separator + p {
     margin-top: 3px;
 }
 
-/* Reduce spacing around content after ellipses */
 .card-header p {
     margin-bottom: 2px;
     margin-top: 2px;
