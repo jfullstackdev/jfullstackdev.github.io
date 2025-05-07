@@ -137,41 +137,59 @@ p.ellipsis-separator + p {
         padding-left: 5px;
         padding-right: 5px;
     }
+    
+    .my-profile .row .col-lg-4 {
+        -ms-flex: 0 0 40%;
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+    
+    .my-profile .row .col-lg-8 {
+        -ms-flex: 0 0 60%;
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+    
+    .tech-grid {
+        max-width: 350px;
+    }
 }
 
 .my-profile .row .col-lg-8 .card {
-    min-height: 450px;
+    min-height: auto;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
 
 .my-profile .row .col-lg-8 .card .card-header {
-    flex-grow: 1;
+    flex-grow: 0;
     display: flex;
     flex-direction: column;
+    padding: 0.75rem 0.75rem 1.5rem !important;
 }
 
 .tech-stack {
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 10px;
+    margin-bottom: 0;
     text-align: center;
 }
 
 .tech-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    max-width: 500px;
-    margin: 0 auto 20px auto;
+    gap: 8px;
+    max-width: 350px;
+    margin: 0 auto 15px auto;
 }
 
 .tech-item {
     background: #e0e0e0;
-    padding: 5px 8px;
+    padding: 4px 6px;
     border-radius: 15px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
-    margin: 2px;
+    margin: 1px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
