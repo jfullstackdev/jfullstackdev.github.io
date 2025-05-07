@@ -1,7 +1,7 @@
 body {
-    background: #67B26F;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #67B26F;
+    background: -webkit-linear-gradient(left, #4ca2cd, #67B26F);
+    background: linear-gradient(90deg, #4ca2cd, #67B26F);
     padding: 0;
     margin: 0;
     font-family: 'Lato', sans-serif;
@@ -80,7 +80,6 @@ p.ellipsis-separator + p {
     margin-top: 3px;
 }
 
-/* Custom styles to reduce gap between cards in desktop mode */
 @media (min-width: 992px) {
     .my-profile .row {
         margin-left: -5px;
