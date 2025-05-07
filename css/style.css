@@ -138,3 +138,41 @@ p.ellipsis-separator + p {
         padding-right: 5px;
     }
 }
+
+.my-profile .row .col-lg-8 .card {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-profile .row .col-lg-8 .card .card-header {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tech-stack {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+}
+
+.tech-item {
+    background: #e0e0e0;
+    padding: 5px 8px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
